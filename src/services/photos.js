@@ -1,5 +1,5 @@
 export const getPhotos = async (photosPerPage, callback) => {
-  const apiKey = import.meta.env.VITE_KEY_API_PEXELS;
+  const apiKey = import.meta.env.VITE_API_KEY;
   const baseUrl = "https://api.pexels.com/v1/curated";
   let response = [];
 
