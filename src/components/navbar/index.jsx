@@ -7,6 +7,7 @@ import { FiSend } from "react-icons/fi";
 import { BiExit } from "react-icons/bi";
 import { MdMonitor } from "react-icons/md";
 import logoInstagran from "../../assets/logo-instagran.svg";
+import PropTypes from "prop-types";
 
 const menuNav = [
   {
@@ -95,3 +96,10 @@ export function NavBar({ themeToggler, theme }) {
     </C.Container>
   );
 }
+
+NavBar.propTypes = {
+  themeToggler: PropTypes.func,
+  theme: PropTypes.string,
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+};

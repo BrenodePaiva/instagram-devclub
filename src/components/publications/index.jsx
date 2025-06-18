@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Typography } from "../../style";
 import { InfoProfile } from "../infoprofile";
 import * as C from "./style";
@@ -22,3 +23,7 @@ export function Publications({ photos }) {
     </C.Container>
   );
 }
+
+Publications.propTypes = {
+  photos: PropTypes.object,
+};

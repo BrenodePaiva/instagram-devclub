@@ -3,6 +3,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import * as C from "./style";
 import { randomNumbers } from "../../utils/randomNumbers";
+import PropTypes from "prop-types";
 
 export function InfoProfile({ name, photo, link }) {
   return (
@@ -30,3 +31,9 @@ export function InfoProfile({ name, photo, link }) {
     </Flex>
   );
 }
+
+InfoProfile.propTypes = {
+  name: PropTypes.string,
+  photo: PropTypes.string,
+  link: PropTypes.string,
+};
