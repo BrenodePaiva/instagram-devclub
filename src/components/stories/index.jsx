@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Flex, Typography } from "../../style";
 import * as C from "./style";
+import PropTypes from "prop-types";
 
 export function Stories({ photos }) {
   const [showAll, setShowAll] = useState(false);
@@ -34,3 +35,6 @@ export function Stories({ photos }) {
     </Flex>
   );
 }
+Stories.propTypes = {
+  photos: PropTypes.object,
+};
